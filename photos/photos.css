@@ -1,0 +1,68 @@
+/* 照片查看器 — 极简风格 */
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+body {
+  background: #1a1a1a;
+  color: #ccc;
+  font-family: -apple-system, BlinkMacSystemFont, "PingFang SC", "Microsoft YaHei", sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  padding: 1.5rem;
+}
+
+.viewer {
+  max-width: 900px;
+  width: 100%;
+  text-align: center;
+}
+
+.viewer img {
+  max-width: 100%;
+  max-height: 80vh;
+  border-radius: 8px;
+  box-shadow: 0 8px 40px rgba(0,0,0,.5);
+  display: block;
+  margin: 0 auto;
+}
+
+.viewer__nav {
+  margin-top: 1.5rem;
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+}
+
+.viewer__nav a {
+  color: #888;
+  text-decoration: none;
+  font-size: .9rem;
+  transition: color .2s;
+  padding: .5rem 1rem;
+  border: 1px solid #333;
+  border-radius: 50px;
+}
+
+.viewer__nav a:hover {
+  color: #fff;
+  border-color: #666;
+}
+
+.viewer__title {
+  color: #666;
+  font-size: .85rem;
+  margin-bottom: 1.5rem;
+}
+
+/* 画廊 */
+.gallery { max-width: 1100px; width: 100%; }
+.gallery h1 { text-align: center; color: #ddd; font-size: 1.8rem; margin-bottom: 2rem; }
+.gallery__grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 1.5rem; }
+.gallery__item { text-decoration: none; color: inherit; transition: transform .3s; display: block; }
+.gallery__item:hover { transform: translateY(-4px); }
+.gallery__item img { width: 100%; aspect-ratio: 4/3; object-fit: cover; border-radius: 8px; display: block; }
+.gallery__item span { display: block; text-align: center; margin-top: .5rem; font-size: .85rem; color: #888; }
+.gallery__back { color: #888; text-decoration: none; font-size: .85rem; display: inline-block; margin-bottom: 1rem; }
+.gallery__back:hover { color: #fff; }
