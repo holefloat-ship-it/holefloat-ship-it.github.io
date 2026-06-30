@@ -1,0 +1,132 @@
+/* ============================================================
+   卡片设计系统 — 小红书 3:4 图文卡片
+   支持 Editorial / Swiss 两种风格
+   ============================================================ */
+
+:root {
+  --card-w: 1080px;
+  --card-h: 1440px;
+  --font-sans: -apple-system, BlinkMacSystemFont, "PingFang SC", "Microsoft YaHei", sans-serif;
+  --font-serif: "Songti SC", "Noto Serif CJK SC", Georgia, serif;
+}
+
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+body {
+  font-family: var(--font-sans);
+  background: #e8e4dc;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  padding: 2rem;
+}
+
+/* ── 卡片容器 ────────────────────────────── */
+
+.card {
+  width: 540px;
+  height: 720px;
+  position: relative;
+  overflow: hidden;
+  box-shadow: 0 8px 40px rgba(0,0,0,.15), 0 2px 8px rgba(0,0,0,.08);
+  border-radius: 12px;
+}
+
+/* ── 通用排版元素 ────────────────────────── */
+
+.card__kicker {
+  font-size: 14px;
+  letter-spacing: .2em;
+  text-transform: uppercase;
+  opacity: .7;
+}
+
+.card__title {
+  font-family: var(--font-serif);
+  font-weight: 900;
+  line-height: 1.15;
+}
+
+.card__body {
+  font-size: 18px;
+  line-height: 1.8;
+  opacity: .85;
+}
+
+.card__tag {
+  display: inline-block;
+  font-size: 13px;
+  padding: .35em 1em;
+  border-radius: 50px;
+  font-weight: 600;
+}
+
+.card__number {
+  font-family: var(--font-serif);
+  font-size: 64px;
+  font-weight: 900;
+  opacity: .15;
+  position: absolute;
+}
+
+.card__deco-line {
+  width: 48px;
+  height: 3px;
+  border-radius: 2px;
+}
+
+/* ── 响应式缩放 ──────────────────────────── */
+
+@media (max-width: 600px) {
+  .card {
+    width: 92vw;
+    height: calc(92vw * 4 / 3);
+  }
+  body { padding: 1rem; }
+}
+
+/* ── 画廊页面 ─────────────────────────────── */
+
+.gallery {
+  max-width: 1200px;
+  width: 100%;
+}
+
+.gallery h1 {
+  text-align: center;
+  font-family: var(--font-serif);
+  font-size: 2rem;
+  margin-bottom: 2rem;
+  color: #1a1a1a;
+}
+
+.gallery__grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 2rem;
+}
+
+.gallery__item {
+  text-decoration: none;
+  color: inherit;
+  transition: transform .3s ease;
+}
+
+.gallery__item:hover {
+  transform: translateY(-6px);
+}
+
+.gallery__thumb {
+  aspect-ratio: 3 / 4;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 20px rgba(0,0,0,.1);
+  margin-bottom: .75rem;
+}
+
+.gallery__label {
+  text-align: center;
+  font-size: .9rem;
+  color: #555;
+}

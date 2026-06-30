@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>漂浮洞 · 图文卡片集</title>
+  <link rel="stylesheet" href="css/cards.css">
+  <style>
+    body {
+      background: #f5f2ec;
+      font-family: var(--font-sans);
+    }
+    .gallery {
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 3rem 1.5rem;
+    }
+    .gallery__header {
+      text-align: center;
+      margin-bottom: 3rem;
+    }
+    .gallery__header h1 {
+      font-family: var(--font-serif);
+      font-size: 2.2rem;
+      color: #2a2218;
+      margin-bottom: .5rem;
+    }
+    .gallery__header p {
+      color: #8b7a60;
+      font-size: 1rem;
+    }
+    .gallery__back {
+      display: inline-block;
+      margin-bottom: 1.5rem;
+      color: #c75b39;
+      font-weight: 600;
+      font-size: .9rem;
+      text-decoration: none;
+    }
+    .gallery__back:hover { text-decoration: underline; }
+    .gallery__grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+      gap: 2rem;
+    }
+    .gallery__item {
+      text-decoration: none;
+      color: inherit;
+      transition: transform .3s ease;
+      display: block;
+    }
+    .gallery__item:hover {
+      transform: translateY(-6px);
+    }
+    .gallery__thumb {
+      aspect-ratio: 3 / 4;
+      border-radius: 12px;
+      overflow: hidden;
+      box-shadow: 0 4px 24px rgba(0,0,0,.1);
+      margin-bottom: .8rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 2rem;
+    }
+    .gallery__label {
+      text-align: center;
+      font-weight: 600;
+      font-size: .95rem;
+      color: #3a2a1a;
+    }
+    .gallery__sub {
+      text-align: center;
+      font-size: .8rem;
+      color: #8b7a60;
+      margin-top: .2rem;
+    }
+
+    .thumb-01 { background: linear-gradient(175deg, #f5f0e8, #ede4d4, #e3d5bd); }
+    .thumb-02 { background: #1e2430; }
+    .thumb-03 { background: linear-gradient(160deg, #ebe6db, #ddd6c4); }
+    .thumb-04 { background: #faf7f2; }
+    .thumb-05 { background: #2a2a32; }
+    .thumb-06 { background: #f2efe8; }
+
+    .thumb-label {
+      font-family: var(--font-serif);
+      font-weight: 900;
+      font-size: 1.6rem;
+      opacity: .3;
+    }
+    .thumb-02 .thumb-label,
+    .thumb-05 .thumb-label { color: #fff; }
+  </style>
+</head>
+<body>
+  <div class="gallery">
+    <a href="../index.html" class="gallery__back">← 回到漂浮洞</a>
+    <div class="gallery__header">
+      <h1>图文卡片集</h1>
+      <p>漂浮洞杂志常设栏目的视觉卡片 — 点击查看完整设计</p>
+    </div>
+    <div class="gallery__grid">
+
+      <a href="card-01.html" class="gallery__item">
+        <div class="gallery__thumb thumb-01"><span class="thumb-label">城市漫游</span></div>
+        <p class="gallery__label">城市漫游</p>
+        <p class="gallery__sub">City Walk · ISSUE 07</p>
+      </a>
+
+      <a href="card-02.html" class="gallery__item">
+        <div class="gallery__thumb thumb-02"><span class="thumb-label">书架角落</span></div>
+        <p class="gallery__label">书架角落</p>
+        <p class="gallery__sub">Bookshelf · 深度书评</p>
+      </a>
+
+      <a href="card-03.html" class="gallery__item">
+        <div class="gallery__thumb thumb-03"><span class="thumb-label">日常考古学</span></div>
+        <p class="gallery__label">日常考古学</p>
+        <p class="gallery__sub">Daily Archaeology · 物件研究</p>
+      </a>
+
+      <a href="card-04.html" class="gallery__item">
+        <div class="gallery__thumb thumb-04"><span class="thumb-label">创作现场</span></div>
+        <p class="gallery__label">创作现场</p>
+        <p class="gallery__sub">Studio Visit · 工作室探访</p>
+      </a>
+
+      <a href="card-05.html" class="gallery__item">
+        <div class="gallery__thumb thumb-05"><span class="thumb-label">视觉笔记</span></div>
+        <p class="gallery__label">视觉笔记</p>
+        <p class="gallery__sub">Visual Essay · 图像叙事</p>
+      </a>
+
+      <a href="card-06.html" class="gallery__item">
+        <div class="gallery__thumb thumb-06"><span class="thumb-label">读者来信</span></div>
+        <p class="gallery__label">读者来信</p>
+        <p class="gallery__sub">Letters · 双向对话</p>
+      </a>
+
+    </div>
+  </div>
+</body>
+</html>

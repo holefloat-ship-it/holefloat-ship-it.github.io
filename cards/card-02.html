@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>漂浮洞 · 书架角落</title>
+  <link rel="stylesheet" href="css/cards.css">
+  <style>
+    .card {
+      background: #1e2430;
+      color: #e0ddd4;
+      display: flex;
+      flex-direction: column;
+      padding: 60px 52px;
+    }
+    .card__header { display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 40px; }
+    .card__kicker { color: #a0957a; }
+    .card__divider { width: 100%; height: 1px; background: rgba(224,221,212,.12); margin-bottom: 40px; }
+    .card__title { font-size: 56px; margin-bottom: 20px; }
+    .card__body { color: #b0aca0; max-width: 400px; margin-bottom: auto; }
+    .card__quote { font-family: var(--font-serif); font-size: 28px; font-style: italic; color: #8a8268; margin-bottom: 32px; }
+    .card__deco-line { background: #c9a96e; margin-bottom: 24px; }
+    .card__tag { background: rgba(201,169,110,.15); color: #c9a96e; }
+    .card__number { top: 56px; right: 52px; color: #e0ddd4; opacity: .06; }
+  </style>
+</head>
+<body>
+  <div class="card">
+    <span class="card__number">02</span>
+    <div class="card__header">
+      <p class="card__kicker">书架角落 · Bookshelf</p>
+    </div>
+    <div class="card__divider"></div>
+    <p class="card__quote">"阅读是一座<br>随身携带的<br>避难所。"</p>
+    <h1 class="card__title">书架角落</h1>
+    <div class="card__deco-line"></div>
+    <p class="card__body">深度书评与阅读笔记，挖掘被算法忽略的好书。<br>在畅销榜之外，还有一片广阔的阅读世界。</p>
+    <div style="margin-top:24px;">
+      <span class="card__tag">深度书评</span>
+      <span class="card__tag" style="margin-left:8px;">独立选书</span>
+    </div>
+  </div>
+</body>
+</html>

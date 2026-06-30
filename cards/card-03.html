@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>漂浮洞 · 日常考古学</title>
+  <link rel="stylesheet" href="css/cards.css">
+  <style>
+    .card {
+      background: linear-gradient(160deg, #ebe6db 0%, #ddd6c4 100%);
+      color: #2d2416;
+      display: grid;
+      grid-template-rows: 1fr auto;
+      padding: 0;
+    }
+    .card__top { padding: 56px 52px 0; }
+    .card__image-zone {
+      height: 280px;
+      background: linear-gradient(180deg, #c4b89a 0%, #a89870 40%, #8a7a55 100%);
+      margin: 0 20px 20px;
+      border-radius: 8px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: rgba(255,255,255,.25);
+      font-size: 48px;
+    }
+    .card__kicker { color: #7a6a4e; margin-bottom: 12px; font-size: 13px; letter-spacing: .18em; }
+    .card__title { font-size: 52px; margin-bottom: 12px; }
+    .card__body { color: #5c4e38; font-size: 17px; line-height: 1.75; max-width: 380px; }
+    .card__number { top: 44px; right: 52px; color: #2d2416; opacity: .07; font-size: 72px; }
+    .card__tags { padding: 0 52px 52px; display: flex; gap: 8px; }
+    .card__tag { background: rgba(90,70,40,.08); color: #6b5535; }
+  </style>
+</head>
+<body>
+  <div class="card">
+    <span class="card__number">03</span>
+    <div class="card__top">
+      <p class="card__kicker">日常考古学 · Daily Archaeology</p>
+      <h1 class="card__title">日常<br>考古学</h1>
+      <p class="card__body">从一支铅笔、一盏路灯到早餐铺的蒸汽，<br>在日常之物中发现设计与历史的痕迹。</p>
+    </div>
+    <div class="card__image-zone">
+      <span>✦</span>
+    </div>
+    <div class="card__tags">
+      <span class="card__tag">物件研究</span>
+      <span class="card__tag">设计考古</span>
+    </div>
+  </div>
+</body>
+</html>

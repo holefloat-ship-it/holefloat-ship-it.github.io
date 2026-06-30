@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>漂浮洞 · 创作现场</title>
+  <link rel="stylesheet" href="css/cards.css">
+  <style>
+    .card {
+      background: #faf7f2;
+      color: #1e1a14;
+      display: flex;
+      flex-direction: column;
+      padding: 52px;
+    }
+    .card__strip {
+      position: absolute;
+      top: 0; left: 52px; right: 52px;
+      height: 6px;
+      background: #c75b39;
+    }
+    .card__top { margin-top: 32px; margin-bottom: 32px; }
+    .card__kicker { color: #c75b39; font-weight: 600; margin-bottom: 8px; font-size: 13px; }
+    .card__grid { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; margin-bottom: 32px; }
+    .card__grid-item {
+      aspect-ratio: 1;
+      border-radius: 6px;
+      background: #f0ebe0;
+      display: flex; align-items: center; justify-content: center;
+      color: #d4c8b0; font-size: 32px;
+    }
+    .card__title { font-size: 46px; margin-bottom: 16px; line-height: 1.2; }
+    .card__body { color: #5c5040; font-size: 17px; max-width: 360px; }
+    .card__number { bottom: 48px; right: 52px; color: #1e1a14; opacity: .05; font-size: 80px; }
+    .card__tag { background: rgba(199,91,57,.1); color: #b54528; }
+  </style>
+</head>
+<body>
+  <div class="card">
+    <div class="card__strip"></div>
+    <span class="card__number">04</span>
+    <div class="card__top">
+      <p class="card__kicker">创作现场 · Studio Visit</p>
+    </div>
+    <div class="card__grid">
+      <div class="card__grid-item">◈</div>
+      <div class="card__grid-item">◈</div>
+    </div>
+    <h1 class="card__title">创作现场</h1>
+    <p class="card__body">探访创作者的工作室，呈现作品背后的<br>思考过程。作家、设计师、手工艺人的<br>创作手记。</p>
+    <div style="margin-top:20px;">
+      <span class="card__tag">工作室探访</span>
+    </div>
+  </div>
+</body>
+</html>
